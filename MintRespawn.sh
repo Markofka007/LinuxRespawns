@@ -40,6 +40,10 @@ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/t
 chmod 755 msfinstall
 ./msfinstall
 
+# Install searchsploit
+sudo git clone https://gitlab.com/exploit-database/exploitdb.git /opt/exploit-database
+sudo ln -sf /opt/exploit-database/searchsploit /usr/local/bin/searchsploit
+
 # Clean up
 rm msfinstall
 rm MintRespawn.sh
