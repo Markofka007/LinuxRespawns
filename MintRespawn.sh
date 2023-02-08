@@ -12,7 +12,8 @@ sudo apt update
 sudo apt install -y sublime-text
 
 # Make a tools dir and download linpeas
-mkdir Tools && cd Tools
+mkdir Tools
+cd Tools
 wget https://github.com/carlospolop/PEASS-ng/releases/download/20230129/linpeas.sh
 
 # Go back to home dir
@@ -27,7 +28,10 @@ wget https://github.com/daviddias/node-dirbuster/raw/master/lists/directory-list
 sudo apt install -y gobuster
 
 # Install metasploit
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+chmod 755 msfinstall
+./msfinstall
 
 # Update and Upgrade everything
-sudo apt update && sudo apt upgrade
+sudo apt update
+sudo apt upgrade
