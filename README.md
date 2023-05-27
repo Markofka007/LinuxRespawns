@@ -4,6 +4,8 @@ This is a small personal project.
 Currently I have a respawn script for Linux Mint, but I plan on making one for Tails and Kali as well.
 
 ## Usage:
+```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TheBigCarrot/LinuxRespawns/main/MintRespawn.sh)"```
+OR
 ```
 wget https://github.com/TheBigCarrot/LinuxRespawns/raw/main/name-of-script.sh
 chmod +x name-of-script.sh
