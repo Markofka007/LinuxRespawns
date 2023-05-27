@@ -1,3 +1,4 @@
+#!/bin/bash
 # This is a bash script that installs all the basic tools for my Mint machines
 
 # Move to home dir and make sure git and pip are installed
